@@ -1,0 +1,7 @@
+.nav-item select {
+    outline: 0;
+}
+
+.nav-item select option{
+    color: black;
+}
