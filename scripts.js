@@ -1,11 +1,9 @@
-require('dotenv').config();
 let category = 'general';
 const API_KEY='5aa6d3f572a94ccabc59e06c29582809';
 
 
-
 function fetchNews() {
-    const url = `https://newsapi.org/v2/top-headlines?category=${category}&country=in&apiKey=${API_KEY}`;
+    const url = `https://newsapi.org/v2/top-headlines?category=${category}&country=in&pageSize=99&apiKey=${API_KEY}`;
 
     fetch(url)
         .then(response => response.json())
